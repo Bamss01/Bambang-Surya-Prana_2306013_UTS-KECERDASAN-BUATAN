@@ -1,0 +1,50 @@
+Soal_1
+1. Kasus:
+ Seorang Petani ingin sistem AI yang bisa membantu menentukan jenis hama tanaman berdasarkan gejala seperti berikut:
+ 1. Daun menguning
+ 2. Terdapat bercak hitam
+ 3. Daun berlubang
+ 4. Tanaman layu
+
+Jawaban:
+1. IF - THEN RULES
+* IF daun menguning THEN kemungkinan tanaman terkena Hama Kutu
+* IF terdapat bercak hitam THEN kemungkinan tanaman terkena Jamur
+* IF daun berlubang THEN kemungkinan tanaman dimakan Ulat
+* IF tanaman layu THEN kemungkinan tanaman terkena Bakteri
+
+2. Logika Proposisional
+* P1: Daun menguning
+* P2: Terdapat bercak hitam
+* P3: Daun berlubang
+* P4: Tanaman layu
+* H1: Hama Kutu
+* H2: Jamur
+* H3: Ulat
+* H4: Bakteri
+
+P1 -> H1 
+(jika daun menguning, maka kemungkinan tanaman terkena Virus)
+
+P2 -> H2 
+(jika terdapat bercak hitam, maka kemungkinan terkena Jamur)
+
+P3 -> H3 
+(jika daun berlubang, maka kemungkinan dimakan Ulat)
+
+P4 -> H4 
+(jika tanaman layu, maka kemungkinan terkena Bakteri)
+
+(P1 ∧ P4) → H5
+(Jika daun menguning dan tanaman layu, maka ada kemungkinan tanaman terkena virus.)
+
+3. Penjelasan Sistem Inferensi:
+
+Input: 
+Informasi gejala yang dialami tanaman.
+
+Proses Inferensi: 
+Sistem menelusuri aturan yang tersedia satu per satu, mencocokkan gejala yang diberikan dengan aturan yang relevan (inferensi berbasis aturan dengan metode forward chaining).
+
+Output: 
+Diagnosis berupa hama atau penyakit yang menyerang tanaman.
